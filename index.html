@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/icone-carro.webp" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>CARSTORE</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Veículos</a>
+            <a href="#">Comprar</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="nome2">Olá!, </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div>
+            <a href="#">Ver Mais</a>
+        </div>
+    </main>
+    <script>
+        var nome = window.prompt('Olá!, qual seu nome?')
+        var iden = document.getElementById('nome2')
+        iden.innerText = `Óla!, ${nome}`
+    </script>
+</body>
+</html>

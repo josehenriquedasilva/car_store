@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Imagens/Car\ store.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center right;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 100%;
+    height: 10vh;
+}
+
+header > h1 {
+    flex: 0 0 auto;
+    margin: 10px;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header > nav > a {
+    flex: 1 1 auto;
+    text-decoration: none;
+    color: aliceblue;
+    margin: 25px;
+    padding: 15px;
+    
+}
+
+header > nav > a:hover {
+    background-color: rgb(204, 20, 20);
+    border-radius: 20px;
+    transform: translate(-3px, -3px);
+    transition-duration: 0.4s;
+}
+
+main {
+    margin-top: 200px;
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+}
+
+main > h2 {
+    color: white;
+    margin: 0px 20px 90px;
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.164));
+}
+
+main > p {
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+main > div > a {
+    text-decoration: none;
+    background-color: #A52A2A;
+    margin: 10px;
+    padding: 15px;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+main > div > a:hover {
+    background-color: red;
+    transition-duration: 0.3s;
+}
+
+
+@media screen and (max-width: 640px) {
+    body {
+        background-position: right;
+    }
+
+    header {
+        flex-flow: column wrap;
+    }
+
+    header > nav {
+        flex-flow: column nowrap;
+        align-self: flex-end;
+        justify-content: flex-start;
+    }
+
+    header > nav > a {
+        padding: 5px;
+    }
+
+    main {
+        margin-top: 130px;
+        width: 300px;
+    }
+
+    main > h2 {
+        margin: 0px 3px 175px;
+    }
+}
